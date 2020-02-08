@@ -20,4 +20,8 @@ jobs:
     - name: LS
       run: ls
     - name: Archive artifacts
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
+      if: success()
+      with:
+         name: PowerNukkit
+         path: project/build/apk/
