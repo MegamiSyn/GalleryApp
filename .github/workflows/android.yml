@@ -16,8 +16,8 @@ jobs:
     - name: Change wrapper permissions
       run: chmod +x ./gradlew 
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew assembleDebug
     - name: LS
-      run: ls build
+      run: ls
     - name: Archive artifacts
       uses: actions/upload-artifact@v1
